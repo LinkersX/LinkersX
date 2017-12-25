@@ -1,2 +1,2 @@
 # LinkersX
-Lightning fast, encrypted, event driven, object oriented Trading API
+Linkers::X Lightning Fast,Event Driven,Open Architecture,Encrypted Algorithmic HFT Trading Platform with C-API & wrappers for C++,C#,JavaScript,R,MathLab,Python,Metatrader MQL4&5,Sierrachart,NinjaTrader,cAlgo,cTrader,Multicharts ...
