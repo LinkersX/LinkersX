@@ -8,3 +8,5 @@ Lightning Fast :: Event Driven :: Open Architecture :: Encrypted Algorithmic HFT
 :: Connection to retail platform as Metatrader MQL4&5, Sierrachart, NinjaTrader 7&8, cAlgo, cTrader, Multicharts
 
 :: Interactive HTML5 Javascript Charts
+
+:: 100 % Tick based Historial and Real-Time Charts with Tick by Tick Backtest in Microsecond Resolution
