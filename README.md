@@ -1,4 +1,4 @@
-# LinkersX
+# Linkers::X
 Lightning Fast :: Event Driven :: Open Architecture :: Encrypted Algorithmic HFT Trading Platform with C-API 
 
 :: Featuring ::
@@ -14,3 +14,5 @@ Lightning Fast :: Event Driven :: Open Architecture :: Encrypted Algorithmic HFT
 :: Encrypted Inter-process Communication between Objects, Classes, Containers, Database, File storage and Messaging.
 
 :: MongoDB, NoSQL & MySQL Databases are Integrated.
+
+:: Built in Trading Events and Signals.
