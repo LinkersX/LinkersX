@@ -12,3 +12,5 @@ Lightning Fast :: Event Driven :: Open Architecture :: Encrypted Algorithmic HFT
 :: 100 % Tick based Historial and Real-Time Charts with Tick by Tick Backtest in Microsecond Resolution.
 
 :: Encrypted Inter-process Communication between Objects, Classes, Containers, Database, File storage and Messaging.
+
+:: MongoDB, NoSQL & MySQL Databases are Integrated.
