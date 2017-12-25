@@ -7,7 +7,7 @@ Lightning Fast :: Event Driven :: Open Architecture :: Encrypted Algorithmic HFT
 
 :: C-API with wrappers for C++, C++, C#, JavaScript, R, MathLab, Python.
 
-:: Connection to retail platform as Metatrader MQL4&5, Sierrachart, NinjaTrader 7&8, cAlgo, cTrader and Multicharts.
+:: Connection to retail platforms like Metatrader MQL4&5, Sierrachart, NinjaTrader 7&8, cAlgo, cTrader and Multicharts.
 
 :: Interactive HTML5 Javascript Charts
 
