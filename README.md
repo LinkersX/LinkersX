@@ -11,7 +11,7 @@ Lightning Fast :: Event Driven :: Open Architecture :: Encrypted Algorithmic HFT
 
 :: Interactive HTML5 Javascript Charts
 
-:: 100 % Tick based Historical and Real-Time Charts with Tick by Tick Backtest in Microsecond Resolution.
+:: 100% Tick based Historical and Real-Time Charts with Tick & Events based Backtest in Microsecond Resolution.
 
 :: Encrypted Inter-process Communication between Objects, Classes, Containers, Database, File storage and Messaging.
 
