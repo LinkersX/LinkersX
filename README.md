@@ -1,4 +1,15 @@
-# Linkers::X
+# Linkers::X→theNextBigThing; 
+
+in C++ HFT Algorithmic Trading will happen here!
+
+Linkers::X a Lightning Fast Event Driven Encrypted HFT Algorithmic Trading Platform with Object Oriented Trading Language.
+
+
+Email Address
+Sign Up
+   
+© Untitled.Credits: HTML5 UP
+
 Lightning Fast :: Event Driven :: Open Architecture :: Encrypted Algorithmic HFT Trading Platform with C-API 
 
 :: Featuring ::
