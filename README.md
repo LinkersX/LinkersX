@@ -25,7 +25,9 @@ X:: Built in over 100 Trading Events and Signals.
 X:: Custom Indicators and Strategies can be written in c/C++ , C# and MQL 4 & 5
 
 LinkersX::xVector.push(struct); is FASTER than just a simple offset_ptr in C++
+
 This is INSANE. 
+
 LinkersX with its proprietary expandable, encrypted containers, is FASTER than ANYTHING EVER WRITTEN in HFT world.
 LinkersX can serve multiple HFT trading algos at once.
 
