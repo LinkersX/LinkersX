@@ -101,7 +101,8 @@ namespace cAlgo.Robots
           if(e.id == gum60.id && e.ticks[e.ticks.index -5].price > e.ticks.daily[2].high)
           {
            // if the barseries is minute60 and 5 ticks ago  the tick price was higher than daily high 2 days ago
-           // Since we can access the Open, Close, High Low Times, Ask and Bid , we gonna print high price and actual time of the daily high 2 days ago
+           // Since we can access the Open, Close, High and Low Times, Ask and Bid , we gonna print high price and actual time of the tick
+           //   that was of the daily high 2 days ago
            Print("Today's High Price:" + e.daily[2].high + "Today's High Time" + e.daily[2].highTime);
           }
        
