@@ -8,7 +8,7 @@ X:: Featuring ::X
 
 X:: Fully Written in c/C++ & assembler with speed in mind.
 
-
+//--------------------------------------------------------------
 //example of a strategy written for cTrader using LinkersX API
 
 using System;
