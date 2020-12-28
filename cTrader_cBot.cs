@@ -19,6 +19,8 @@ namespace cAlgo.Robots
         private BarsX gum240;
         private BarsX gurr10;
         private BarsX gut56;
+        private BarsX guur200;
+        
         [Parameter(DefaultValue = 0.0)]
         public double Parameter { get; set; }
 
@@ -35,7 +37,7 @@ namespace cAlgo.Robots
             
             // declare ONE BarX bar starting from startTime in the Future
             // UltimateRenko BarType 200 pips in size.
-            guur100 = new BarX(ref gu1, startTime, BarType.UltimateRenko, 200); 
+            guur200 = new BarX(ref gu1, startTime, BarType.UltimateRenko, 200); 
 
             gum1.OnEvent += onEvent;
             gum5.OnEvent += onEvent;
