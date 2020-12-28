@@ -6,8 +6,8 @@ using cAlgo.API.Internals;
 using cAlgo.Indicators;
 using LinkersX;
 
-//This is an example of a fully event driven multi barType & timeframe && multi Instrument 
-//fully backtestable cTrader Robot using LinkersX Trading API
+//This is an example of an event driven multi barType & timeframe && multi Instrument 
+//fully backtestable tick by tick cTrader Robot using LinkersX Event Driven Trading API
 namespace cAlgo.Robots
 {
     [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.FullAccess)]
