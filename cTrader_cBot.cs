@@ -58,17 +58,17 @@ namespace cAlgo.Robots
             //we got a firstTickOfBar event from the Tick.56 object x-> do something :-)
           }
           // same just easier
-          if(e.firstTickOfBar && e.bars.id == gut56.id) // check if first tick of bar and bar object is tick.56
+          if(e.firstTickOfBar && e.id == gut56.id) // check if first tick of bar and bar object is tick.56
           {
             //we got a firstTickOfBar event from the Tick.56 object x-> do something :-)
           }
           
-          if(e.bar.id == guur200.id)
+          if(e.id == guur200.id)
           {
            //our guur200 200pips in size Ultimate Renko BarX object declared in the future has just finished the bar object x-> do something :-)
           }
           
-          if(e.newBarHigh && e.bars.id == gum15.id)
+          if(e.newBarHigh && e.id == gum15.id)
           {
            //our 15 minutes GBPUSD Bar is making new Highs x-> do something :-)
           }
