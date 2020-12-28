@@ -6,7 +6,7 @@ using cAlgo.API.Internals;
 using cAlgo.Indicators;
 using LinkersX;
 
-//This is an example of a fully event driven multi timeframe & multi Instrument 
+//This is an example of a fully event driven multi barType & timeframe && multi Instrument 
 //fully backtestable cTrader Robot using LinkersX Trading API
 namespace cAlgo.Robots
 {
@@ -91,6 +91,16 @@ namespace cAlgo.Robots
           if(e._non_Farm_Employment_Change)
           {
            // watch out! Non-Farm Employment Change event in Play!
+          }
+         
+          if(e.id == gum5.id && e.bars[e.index -3].candlestick.doji)
+          {
+           // 3 bars ago on a 5 minute BarSeries the bar was Doji 
+          }
+          
+          if(e.id == gum60.id && e.ticks[e.ticks.index -5].price > e.ticks.dailyHigh(2))
+          {
+          // if 5 ticks agotick price was higher than 2 days ago dailyHigh
           }
           
         }
