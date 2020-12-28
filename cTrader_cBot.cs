@@ -49,11 +49,14 @@ namespace cAlgo.Robots
             guur200.OnEvent += onEvent; // BarX will notify us when the Bar is done.
         }
 
+         // various event types
         public void onEvent(EventX e)
         {
-          
-          //Your event driven strategy fully backtestable multi instrument & timeframe
-          //cTrader strategy starts here :-)
+          if(e.firstTickOfBar && e.bars.barType == BarType.Minute && e.bars.barsPeriod == 56)
+          {
+            //we got a firstTickOfBar event from the Tick.56 object -> do something :-)
+          }
+         
         }
     }
 }
