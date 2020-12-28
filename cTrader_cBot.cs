@@ -22,7 +22,7 @@ namespace cAlgo.Robots
         private BarsX gurr10;
         private BarsX gut56;
         private BarsX guur200;
-        Private MarketProfilesX mpgu1;
+        private MarketProfilesX mpgu1;
         
         [Parameter(DefaultValue = 0.0)]
         public double Parameter { get; set; }
@@ -84,7 +84,8 @@ namespace cAlgo.Robots
           //if 2 bars ago on a 1 minute bar series volue at Ask was bigger than same bar Volume at Bid
           if(e.bars.id == gum1.id && e.bars[e.index-2].volumeAtAsk > e.bars[e.index-2].volumeAtBid)
           {
-           e.bars[e.index-2].repaintBar(color); //repaint the bar into color ;-)
+           e.bars[e.index-2].eraseBar(); //erase bar from chart for the market profile we gonna draw)
+           e.bars[e.index-2].drawMarketProfile();  // just draw a market profile to the chart
           }
           
         }
