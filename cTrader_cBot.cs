@@ -21,6 +21,7 @@ namespace cAlgo.Robots
         private BarsX gurr10;
         private BarsX gut56;
         private BarsX guur200;
+        Private MarketProfilesX mpgu1;
         
         [Parameter(DefaultValue = 0.0)]
         public double Parameter { get; set; }
@@ -66,6 +67,7 @@ namespace cAlgo.Robots
           if(e.id == guur200.id)
           {
            //our guur200 200pips in size Ultimate Renko BarX object declared in the future has just finished the bar object x-> do something :-)
+            mpgu1.add(guur200); // add the guur200 BarX object to the MarketProfilesX DataSeries Container.
           }
           
           if(e.newBarHigh && e.id == gum15.id)
