@@ -11,6 +11,37 @@ X:: Fully Written in c/C++ & assembler with speed in mind.
 //--------------------------------------------------------------
 //example of a strategy written for cTrader using LinkersX API
 //--------------------------------------------------------------
+
+using System;
+
+using System.Linq;
+using cAlgo.API;
+using cAlgo.API.Indicators;
+using cAlgo.API.Internals;
+using cAlgo.Indicators;
+using LinkersX;
+
+        
+   
+//This is an example of a fully event driven multi timeframe & multi Instrument 
+//fully backtestable cTrader Robot using LinkersX Trading API
+namespace cAlgo.Robots
+{
+    [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.FullAccess)]
+    public class cTrader_cBot : Robot
+    {
+        private TicksX gu1;
+        private BarsX gum1;
+        private BarsX gum5;
+        private BarsX gum15;
+        private BarsX gum60;
+        private BarsX gum240;
+        private BarsX gurr10;
+        private BarsX gut56;
+        private BarsX guur200;
+        private MarketProfilesX mpgu1;
+        [Parameter(DefaultValue = 0.0)]
+        public double Parameter { get; set; }
         protected override void OnStart()
         {
             gu1 = new TicksX("GBPUSD", 1, this);
