@@ -6,6 +6,7 @@ using cAlgo.API.Internals;
 using cAlgo.Indicators;
 using LinkersX;
 
+//This is an example of a fully event driven cTrader Robot using LinkersX Trading API
 namespace cAlgo.Robots
 {
     [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.FullAccess)]
