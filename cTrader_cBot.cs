@@ -49,7 +49,7 @@ namespace cAlgo.Robots
             guur200.OnEvent += onEvent; // BarX will notify us when the Bar is done.
         }
 
-         // various event types
+         // various event types... All subscribed events will execute on onEvent
         public void onEvent(EventX e)
         {
           if(e.firstTickOfBar && e.bars.barType == BarType.Tick && e.bars.barsPeriod == 56)
