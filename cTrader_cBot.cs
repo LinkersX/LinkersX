@@ -68,7 +68,7 @@ namespace cAlgo.Robots
            //our guur200 200pips in size Ultimate Renko BarX object declared in the future has just finished the bar object x-> do something :-)
           }
           
-          if(e.newBarHigh &&  == e.bars.id == gum15.id)
+          if(e.newBarHigh && e.bars.id == gum15.id)
           {
            //our 15 minutes GBPUSD Bar is making new Highs x-> do something :-)
           }
