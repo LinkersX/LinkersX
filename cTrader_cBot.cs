@@ -95,7 +95,7 @@ namespace cAlgo.Robots
          
           if(e.id == gum5.id && e.bars[e.index -3].candlestick.doji)
           {
-           // 3 bars ago on a 5 minute BarSeries the bar was Doji 
+           //if 3 bars ago on a 5 minute BarSeries the candlestick type was Doji 
           }
           
           if(e.id == gum60.id && e.ticks[e.ticks.index -5].price > e.ticks.dailyHigh(2))
