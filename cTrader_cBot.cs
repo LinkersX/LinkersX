@@ -22,6 +22,8 @@ namespace cAlgo.Robots
         private BarsX gurr10;
         private BarsX gut56;
         private BarsX guur200;
+        private SwingX gusw1; 
+        private SwingX guswm5;
         //MarketProfilesX is a custom driven, memory wise unrestricted version of BarsX BarSeries container
         // for storing independent BarX Market Profile Bars
         private MarketProfilesX mpgu1; 
@@ -43,6 +45,10 @@ namespace cAlgo.Robots
             // declare ONE BarX bar starting from startTime in the Future
             // UltimateRenko BarType 200 pips in size.
             guur200 = new BarX(ref gu1, startTime, BarType.UltimateRenko, 200); 
+            
+            //
+            gusw1 = new BarX(gum1, 1); // attach SwingX High Low algorythm to gum1 1min chart
+            guswm5 = new BarX(gum5, 1);
 
             gum1.OnEvent += onEvent;
             gum5.OnEvent += onEvent;
@@ -107,11 +113,18 @@ namespace cAlgo.Robots
            //   that was of the daily high 2 days ago
            Print("High of a day 2 days ago Price:" + e.daily[2].high + " Time of the days High" + e.daily[2].highTime);
           }
+          
           if(e.dailyHigh  && e.bars.symbolName == "GBPUSD")
           {
           // if event is new daily high and symbol name is "GBPUSD" then print out new daily high
           Print (e.bars.symbolName + " new Daily high :" + e.bars[e.index].ClosePrices);
           }
+          
+          if(e.id == gum5.id && e.newSwingHigh && e.swing[0].swingHighRetracement(50))
+          {
+           //if event is new swing high and barseries is 5min gum5 and retracement from last swing up on a 5min chart is 50 percent
+          }
+          //-----------
         }
     }
 }
