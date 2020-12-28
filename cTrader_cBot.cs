@@ -32,6 +32,10 @@ namespace cAlgo.Robots
             gum240 = new BarsX(ref gu1, BarType.Minute, 240);
             gurr10 = new BarsX(ref gu1, BarType.RomanRenko, 10);
             gut56 = new BarsX(ref gu1, BarType.Tick, 56);
+            
+            // declare ONE BarX bar starting from startTime in the Future
+            // UltimateRenko BarType 200 pips in size.
+            guur100 = new BarX(ref gu1, startTime, BarType.UltimateRenko, 200); 
 
             gum1.OnEvent += onEvent;
             gum5.OnEvent += onEvent;
@@ -40,10 +44,12 @@ namespace cAlgo.Robots
             gum240.OnEvent += onEvent;
             gurr10.OnEvent += onEvent;
             gut56.OnEvent += onEvent;
+            guur200.OnEvent += onEvent; // BarX will notify us when the Bar is done.
         }
 
         public void onEvent(EventX e)
         {
+          
           //Your event driven strategy fully backtestable multi instrument & timeframe
           //cTrader strategy starts here :-)
         }
