@@ -72,8 +72,8 @@ namespace cAlgo.Robots
             mpgu1.add(guur200); // add the guur200 BarX object to the MarketProfilesX DataSeries Container.
               Print("UltimateRenko 200 pips BarX object just finished!" 
                     + " Point of Control by Time Profile is:" + guur200.levels.POC_byTime() 
-                    + " Point of Control By volume:" +  guur200.levels.POC_byVolume()
-                    + " Point of Control By Tick Count:" +  guur200.levels.POC_byTick())
+                    + " Point of Control by volume:" +  guur200.levels.POC_byVolume()
+                    + " Point of Control by Tick Count:" +  guur200.levels.POC_byTick())
           }
           
           if(e.newBarHigh && e.id == gum15.id)
@@ -98,11 +98,13 @@ namespace cAlgo.Robots
            //if 3 bars ago on a 5 minute BarSeries the candlestick type was Doji 
           }
           
-          if(e.id == gum60.id && e.ticks[e.ticks.index -5].price > e.ticks.dailyHigh(2))
+          if(e.id == gum60.id && e.ticks[e.ticks.index -5].price > e.ticks.daily[2].high)
           {
-          // if the barseries is minute60 and 5 ticks ago  the tick price was higher than 2 days ago dailyHigh
+           // if the barseries is minute60 and 5 ticks ago  the tick price was higher than daily high 2 days ago
+           // Since we can access the Open, Close, High Low Times, Ask and Bid , we gonna print high price and actual time of the daily high 2 days ago
+           Print("Today's High Price:" + e.daily[2].high + "Today's High Time" + e.daily[2].highTime);
           }
-          
+       
         }
     }
 }
