@@ -52,7 +52,7 @@ namespace cAlgo.Robots
          // various event types
         public void onEvent(EventX e)
         {
-          if(e.firstTickOfBar && e.bars.barType == BarType.Minute && e.bars.barsPeriod == 56)
+          if(e.firstTickOfBar && e.bars.barType == BarType.Tick && e.bars.barsPeriod == 56)
           {
             //we got a firstTickOfBar event from the Tick.56 object -> do something :-)
           }
