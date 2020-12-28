@@ -120,9 +120,10 @@ namespace cAlgo.Robots
           Print (e.bars.symbolName + " new Daily high :" + e.bars[e.index].ClosePrices);
           }
           
-          if(e.id == gum5.id && e.newSwingHigh && e.swing[0].swingHighRetracement(50))
+          if(e.id == gum5.id && e.newSwingHigh && e.swingHigh[0].fibonacci(50)) 
           {
            //if event is new swing high and barseries is 5min gum5 and retracement from last swing up on a 5min chart is 50 percent
+           //e.swingHigh[0].fibonacci(50) returns true if the price is around 50% (+/- level size 5pips) retracement from the current SwingHigh(up) 
           }
           //-----------
         }
