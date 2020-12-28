@@ -68,9 +68,9 @@ namespace cAlgo.Robots
           {
            //our guur200 200pips in size Ultimate Renko BarX object declared in the future has just finished the bar object x-> do something :-)
             mpgu1.add(guur200); // add the guur200 BarX object to the MarketProfilesX DataSeries Container.
-            Print("UltimateRenko 200 pips BarX object just finished! Point of Control by Time Profile is:"
-            + guur200.levels.POC_byTime() + " Point of Control By volume:" +  guur200.levels.POC_byVolume()
-            + " Point of Control By Tick Count:" +  guur200.levels.POC_byTick())
+              Print("UltimateRenko 200 pips BarX object just finished! Point of Control by Time Profile is:"
+                    + guur200.levels.POC_byTime() + " Point of Control By volume:" +  guur200.levels.POC_byVolume()
+                    + " Point of Control By Tick Count:" +  guur200.levels.POC_byTick())
           }
           
           if(e.newBarHigh && e.id == gum15.id)
