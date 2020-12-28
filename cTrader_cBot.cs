@@ -54,7 +54,7 @@ namespace cAlgo.Robots
          // various event types... All subscribed events will execute on onEvent
         public void onEvent(EventX e)
         {
-          if(e.firstTickOfBar && e.bars.barType == BarType.Tick && e.bars.barsPeriod == 56)
+          if(e.firstTickOfBar && e.bars.barType == e.bars.barType.Tick && e.bars.barsPeriod == 56)
           {
             //we got a firstTickOfBar event from the Tick.56 object x-> do something :-)
           }
