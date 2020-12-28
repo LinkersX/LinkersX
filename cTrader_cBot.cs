@@ -81,11 +81,11 @@ namespace cAlgo.Robots
            //our 15 minutes GBPUSD Bar is making new Highs x-> do something :-)
           }
           
-          //if 2 bars ago on a 1 minute bar series volue at Ask was bigger than same bar Volume at Bid
+          //if 2 bars ago on a 1 minute bar series volume at Ask was bigger than same bar Volume at Bid
           if(e.bars.id == gum1.id && e.bars[e.index-2].volumeAtAsk > e.bars[e.index-2].volumeAtBid)
           {
            e.bars[e.index-2].eraseBar(); //erase bar from chart for the market profile we gonna draw)
-           e.bars[e.index-2].drawMarketProfile();  // just draw a market profile to the chart
+           e.bars[e.index-2].drawMarketProfile();  // just draw a market profile Bar to the chart instead of the erased MTF bar
           }
           
           if(e._non_Farm_Employment_Change)
