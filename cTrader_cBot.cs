@@ -105,7 +105,11 @@ namespace cAlgo.Robots
            //   that was of the daily high 2 days ago
            Print("High of a day 2 days ago Price:" + e.daily[2].high + " Time of the days High" + e.daily[2].highTime);
           }
-       
+          if(e.dailyHigh  && e.bars.symbolName == "GBPUSD")
+          {
+          // if event is new daily high and symbol name is "GBPUSD" then print out new daily high
+          Print (e.bars.symbolName + " new Daily high :" + e.bars[e.index].ClosePrices);
+          }
         }
     }
 }
