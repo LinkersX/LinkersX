@@ -22,7 +22,8 @@ namespace cAlgo.Robots
         private BarsX gurr10;
         private BarsX gut56;
         private BarsX guur200;
-        //MarketProfilesX is memory wise unrestricted version of BarsX BarSeries container
+        //MarketProfilesX is a custom driven, memory wise unrestricted version of BarsX BarSeries container
+        // for storing independent BarX Market Profile Bars
         private MarketProfilesX mpgu1; 
         
         [Parameter(DefaultValue = 0.0)]
