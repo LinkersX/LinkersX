@@ -88,6 +88,11 @@ namespace cAlgo.Robots
            e.bars[e.index-2].drawMarketProfile();  // just draw a market profile to the chart
           }
           
+          if(e._non_Farm_Employment_Change)
+          {
+           // watch out! Non-Farm Employment Change event in Play!
+          }
+          
         }
     }
 }
