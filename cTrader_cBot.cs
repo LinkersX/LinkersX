@@ -6,7 +6,8 @@ using cAlgo.API.Internals;
 using cAlgo.Indicators;
 using LinkersX;
 
-//This is an example of a fully event driven cTrader Robot using LinkersX Trading API
+//This is an example of a fully event driven multi timeframe & multi Instrument 
+//fully backtestable cTrader Robot using LinkersX Trading API
 namespace cAlgo.Robots
 {
     [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.FullAccess)]
@@ -54,6 +55,7 @@ namespace cAlgo.Robots
          // various event types... All subscribed events will execute on onEvent
         public void onEvent(EventX e)
         {
+                   
           if(e.firstTickOfBar && e.bars.barType == BarType.Tick && e.bars.barsPeriod == 56)
           {
             //we got a firstTickOfBar event from the Tick.56 object x-> do something :-)
@@ -77,6 +79,13 @@ namespace cAlgo.Robots
           {
            //our 15 minutes GBPUSD Bar is making new Highs x-> do something :-)
           }
+          
+          //if 2 bars ago on a 1 minute bar series volue at Ask was bigger than same bar Volume at Bid
+          if(e.bars.id == gum1.id && e.bars[e.index-2].volumeAtAsk > e.bars[e.index-2].volumeAtBid)
+          {
+           e.bars[e.index-2].repaintBar(color); //repaint the bar into color ;-)
+          }
+          
         }
     }
 }
