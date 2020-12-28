@@ -56,6 +56,11 @@ namespace cAlgo.Robots
           {
             //we got a firstTickOfBar event from the Tick.56 object -> do something :-)
           }
+          // same just easier
+           if(e.firstTickOfBar && e.bars.id == gut56.id) // check if first tick of bar and bar object is tick.56
+          {
+            //we got a firstTickOfBar event from the Tick.56 object -> do something :-)
+          }
          
         }
     }
