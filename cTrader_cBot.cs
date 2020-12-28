@@ -22,7 +22,8 @@ namespace cAlgo.Robots
         private BarsX gurr10;
         private BarsX gut56;
         private BarsX guur200;
-        private MarketProfilesX mpgu1;
+        //MarketProfilesX is memory wise unrestricted version of BarsX BarSeries container
+        private MarketProfilesX mpgu1; 
         
         [Parameter(DefaultValue = 0.0)]
         public double Parameter { get; set; }
@@ -52,7 +53,7 @@ namespace cAlgo.Robots
             guur200.OnEvent += onEvent; // BarX will notify us when the Bar is done.
         }
 
-         // various event types... All subscribed events will execute on onEvent
+         // various event types examples... All subscribed events will execute on onEvent
         public void onEvent(EventX e)
         {
                    
