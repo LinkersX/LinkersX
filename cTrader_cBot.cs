@@ -100,7 +100,7 @@ namespace cAlgo.Robots
           
           if(e.id == gum60.id && e.ticks[e.ticks.index -5].price > e.ticks.dailyHigh(2))
           {
-          // if 5 ticks agotick price was higher than 2 days ago dailyHigh
+          // if the barseries is minute60 and 5 ticks ago  the tick price was higher than 2 days ago dailyHigh
           }
           
         }
