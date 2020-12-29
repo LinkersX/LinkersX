@@ -28,19 +28,22 @@ namespace cAlgo.Robots
         // for storing independent BarX Market Profile Bars
         private MarketProfilesX mpgu1; 
         
+        private int daysToLoad = 1;
+        private int levelSizeInPips = 5;
+        
         [Parameter(DefaultValue = 0.0)]
         public double Parameter { get; set; }
 
         protected override void OnStart()
         {
-            gu1 = new TicksX("GBPUSD", 1, this);
-            gum1 = new BarsX(ref gu1, BarType.Minute, 1);
+            gu1 = new TicksX("GBPUSD", daysToLoad, this, levelSizeInPips); //Download 1 days tick data of "GBPUSD" and we set levels size to 5 pips
+            gum1 = new BarsX(ref gu1, BarType.Minute, 1); // attach 1 min barseries
             gum5 = new BarsX(ref gu1, BarType.Minute, 5);
             gum15 = new BarsX(ref gu1, BarType.Minute, 15);
             gum60 = new BarsX(ref gu1, BarType.Minute, 60);
             gum240 = new BarsX(ref gu1, BarType.Minute, 240);
             gurr10 = new BarsX(ref gu1, BarType.RomanRenko, 10);
-            gut56 = new BarsX(ref gu1, BarType.Tick, 56);
+            gut56 = new BarsX(ref gu1, BarType.Tick, 56); // attach 56 Tick barseries
             
             // declare ONE BarX bar starting from startTime in the Future
             // UltimateRenko BarType 200 pips in size.
@@ -84,7 +87,7 @@ namespace cAlgo.Robots
             mpgu1.add(guur200); // add the guur200 BarX object to the MarketProfilesX DataSeries Container.
               Print("UltimateRenko 200 pips BarX object just finished!" 
                     + " Point of Control by Time Profile is:" + guur200.levels.POC_byTime() 
-                    + " Point of Control by volume:" +  guur200.levels.POC_byVolume()
+                    + " Point of Control by Volume Profile:" +  guur200.levels.POC_byVolume()
                     + " Point of Control by Tick Count:" +  guur200.levels.POC_byTick())
           }
           
