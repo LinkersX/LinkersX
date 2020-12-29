@@ -125,6 +125,13 @@ namespace cAlgo.Robots
            //if event is new swing high and barseries is 5min gum5 and retracement from last swing up on a 5min chart is 50 percent
            //e.swingHigh[0].fibonacci(50) returns true if the price is around 50% (+/- level size 5pips) retracement from the current SwingHigh(up) 
           }
+          
+          NewsX news1; 
+          if(e._non_Farm_Employment_Change && e._news_Actual)
+          {
+           // if you got enough money for a reuters feed, the Library can add Actual value to news calendar. You'll get the e._news_Actual event;
+           news1 = e.news.GetEvent(0); // get current (0)NewsX Forex calendar object 
+          }
           //-----------
         }
     }
