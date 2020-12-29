@@ -132,7 +132,8 @@ namespace cAlgo.Robots
            // if you got enough money for a reuters feed, the Library can add Actual value to the news calendar. You'll get the e._news_Actual event;
            news1 = e.news[0].getEvent; // get current(0) NewsX Forex calendar object. (2) 2 news events back; (-3) third upcomming event in the news event queue
            // to add Actual value 
-           e.news[0].actual = "0.9B"; // add "0.9Billion as the Actual value arrived from some aplication Reuters feed for example.
+           e.news[0].actual = "0.9B"; // add "0.9Billion as the Actual value arrived from some aplication Reuters, feed for example.
+           e.news.add(news1); // howto add new custom Event into the news queue
           }
           //-----------
         }
