@@ -58,10 +58,14 @@ namespace cAlgo.Robots
             gurr10.OnEvent += onEvent;
             gut56.OnEvent += onEvent;
             guur200.OnEvent += onEvent; // BarX will notify us when the Bar is done.
+            gusw1.OnEvent += onEvent; // attach SwingX events to onEvent(EventX e)
+            guswm5.OnEvent += onEvent;
+
         }
 
          // various event types examples... All subscribed events will execute on onEvent
-        public void onEvent(EventX e)
+         // since e.id ALWAYS equal to callers object id. This is how we determine which object did call the event. if(e.id == guur200.id)
+        public EventX onEvent(EventX e)
         {
                    
           if(e.firstTickOfBar && e.bars.barType == BarType.Tick && e.bars.barsPeriod == 56)
@@ -136,6 +140,7 @@ namespace cAlgo.Robots
            e.news.add(news1); // howto add new custom Event into the news queue
           }
           //-----------
+          return e;
         }
     }
 }
