@@ -15,4 +15,7 @@ Although LinkersX perfectly integrates into any of the previously mentioned trad
 LinkersX is fully abstracted from its host Trading platforms , has its own tick and bar processing algorithm rewritten from scratch.
 
 
+Buy me a beer in bitcoin @ bc1qkmhze4w64njwg7dacjppq0hzn7ngkjczgm4azq
+Have fun while waiting for the library @ https://www.instagram.com/heymickeynyc/channel/
+
 
