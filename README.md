@@ -10,10 +10,11 @@ Are you tired of porting your trading strategies back and forth from MetaTrader 
 Are you tired that after 15 years we are still playing aroung with half baked trading platforms, 
 and there is always a string attached, linke no tick charts, no tick barTypes, slow or non existent replay, not possible back test with multiple timeframes?
 
-LinkersX is 100% tick based Event Driven Trading API with easy to learn trading language with bouilt in over 100 trading signals.
+LinkersX is 100% tick based Event Driven Trading API with easy to learn trading language with built in over 100 trading signals.
 Although LinkersX perfectly integrates into any of the previously mentioned trading platforms, 
-LinkersX is fully abstracted from its host Trading platforms , has its own tick and bar processing algorithm rewritten from scratch.
-
+LinkersX is fully abstracted from its host Trading platforms , has its own tick and bar processing algorithm rewritten from scratch in C++.
+I'm Mickey and i have 35 years programming experience in Assamblers and C++ & C#<lil bit>
+over 12 Years of experience trading Forex and writing indicators and strategies for Meta, Ninja, sierra and cTrader
 
 Buy me a beer in bitcoin @ bc1qkmhze4w64njwg7dacjppq0hzn7ngkjczgm4azq
 Have fun while waiting for the library @ https://www.instagram.com/heymickeynyc/channel/
