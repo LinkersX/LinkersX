@@ -26,5 +26,7 @@ remember tipping your Bartender is SEXY
 
 https://www.paypal.com/paypalme/heymickeynyc  this->5eur for beer
 
+https://tikkie.me/pay/geb5g0f6i0881e82ihl1  this->5eur for the Sexy Bartender
+
 
 
