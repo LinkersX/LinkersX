@@ -50,7 +50,7 @@ bit.ly/HeyMickeyNYC ... this->5eur for beer
 
 bit.ly/BuyGladiatorNYC ... this->5eur for the Sexy Bartender
 
-P.S. this is raw Hoset, Uncensored Autobiography about a Shy guy, a software developer and his transformation
-into The King of the Game, by #Imre #Vig
+P.S. this is raw Honest, Uncensored Autobiography about a Shy guy, a software developer and his transformation
+into The King of the Game, by #Imre #Vig #imi #maci
 
 
