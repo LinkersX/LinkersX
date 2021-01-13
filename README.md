@@ -19,4 +19,12 @@ over 12 Years of experience trading Forex and writing indicators and strategies 
 Buy me a beer in bitcoin @ bc1qkmhze4w64njwg7dacjppq0hzn7ngkjczgm4azq
 Have fun while waiting for the library @ https://www.instagram.com/heymickeynyc/channel/
 
+Since I'm a public figure a professional homeless guy in Amsterdam, you're more than welcome to tipp my performance,
+as gigolo, street comedian, hustler, pickup artist 
+remember either you're player OR wannabe Player
+remember tipping your Bartender is SEXY
+
+https://www.paypal.com/paypalme/heymickeynyc  this->5eur for beer
+
+
 
